@@ -1,6 +1,7 @@
 print("Welcome To My Game Are You Ready To Die? >:)")
 
 playing = input("Do you want play this game? YOU ARE READY?: ")
+points = 0
 
 if playing != "Yes":
     quit()
@@ -8,11 +9,10 @@ if playing != "Yes":
 print("Carregando jogo BIP BOP <|O_O|>")
 
 
-
-
 def pergunta(pergunta, aswer):
     if aswer == pergunta:
         print("Acertou")
+        points = points + 1
     else:
         print("Erooooooou!")
 
