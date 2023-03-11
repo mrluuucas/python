@@ -7,9 +7,13 @@ if playing != "Yes":
 
 print("Carregando jogo BIP BOP <|O_O|>")
 
-aswer = input("terra dos moinhos e ventos, E um pais da EUROPA, seu idioma e o HOLÂNDES")
 
-if aswer == "Italia":
-    print("Acertou")
-else:
-    print("Erooooooou!")
+
+
+def pergunta(pergunta, aswer):
+    if aswer == pergunta:
+        print("Acertou")
+    else:
+        print("Erooooooou!")
+
+pergunta(input("terra dos moinhos e ventos, E um pais da EUROPA, seu idioma e o HOLÂNDES: "), "Italia")
